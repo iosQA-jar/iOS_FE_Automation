@@ -1,0 +1,29 @@
+>>testDataType: undefined
+>>summary: 
+>>tags: 
+>>feature: 
+>>ticketUrl: 
+>>testCaseId: 
+>>importSource: 
+>>priority: 
+>>aiRequestId: 
+>>mobileApp: IOS_testing
+>>mobileOs: ios
+
+
+--Tap on-- {{newPages > oldUserFlowElements > eg_devmyjarapp}} 
+--Type text-- [[dev.myjar.app]] 
+--Tap on-- {{newPages > oldUserFlowElements > Apply_Custom_URL}} 
+--Tap on-- {{newPages > oldUserFlowElements > English}} 
+--Tap on-- {{newPages > oldUserFlowElements > Apply_2}} 
+--Tap on-- {{newPages > oldUserFlowElements > Skip_for_devs}} 
+--Tap on-- {{newPages > oldUserFlowElements > Start_your_saving_journey}} 
+--Tap on-- {{newPages > oldUserFlowElements > Use_another_number}} 
+--Tap on-- {{newPages > oldUserFlowElements > _00000_00000}} 
+--Type text-- ::constants.NumberOtp.testingnumber:: 
+--Tap on-- {{newPages > oldUserFlowElements > _91}} 
+--Tap on-- {{newPages > oldUserFlowElements > Send_OTP}} 
+--Type text-- ::constants.NumberOtp.testingotp:: 
+--Tap on-- {{newPages > oldUserFlowElements > Login_with_91_6666611111}} 
+--Type text-- ::constants.NumberOtp.testingotp:: 
+

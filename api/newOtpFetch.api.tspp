@@ -1,0 +1,35 @@
+
+
+^^getOtp(number:text)
+{
+    "method": "GET",
+    "baseUrl": "https://dev.myjar.app/v1/api/otp/decryptOTP",
+    "path": "",
+    "request": {
+        "queryParams": [
+            {
+                "name": "phoneNumber",
+                "value": "::number::",
+                "type": "text"
+            }
+        ],
+        "body": {
+            "type": "json"
+        },
+        "auth": {
+            "authType": "None"
+        },
+        "headers": [
+            {
+                "name": "Authorization",
+                "value": "Basic cGFydG5lcl9pbmNlabnRpdmVfc2VydmljZTo1OWMyNTUxZmU0YmVmYjA4OTVlN2I3ZGI5NzMzNWRhMDRiMmI0NTlmZWViZWZlZWYxMGI5YTlkZDdlMjU3MmZi",
+                "type": "text"
+            }
+        ]
+    },
+    "responses": [],
+    "argumnets": [],
+    "api_docs": {},
+    "valid_body": {}
+}
+^^

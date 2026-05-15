@@ -1,0 +1,20 @@
+[
+    {
+        "environments": [
+            "default"
+        ],
+        "isDefault": false,
+        "constants": [
+            {
+                "name": "testingnumber",
+                "type": "text",
+                "value": "6666611111"
+            },
+            {
+                "name": "testingotp",
+                "type": "text",
+                "value": "123456"
+            }
+        ]
+    }
+]

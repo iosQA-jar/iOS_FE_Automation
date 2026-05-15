@@ -1,0 +1,31 @@
+{
+    "runLocation": "LOCAL",
+    "desktopOsProfiles": [
+        {
+            "os": "LOCAL",
+            "browserProfiles": [
+                {
+                    "browser": "CHROMIUM",
+                    "viewProfiles": [
+                        {
+                            "resolution": {
+                                "x": 1920,
+                                "y": 1080
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "testType": "mobile",
+    "parallelism": 1,
+    "mobileDevices": {
+        "type": "ANY",
+        "fallback": {
+            "startEmulators": true,
+            "createEmulators": false
+        }
+    },
+    "mobileOs": "ios"
+}

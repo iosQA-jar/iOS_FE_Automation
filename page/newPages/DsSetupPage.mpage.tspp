@@ -1,0 +1,17 @@
+>>summary: 
+
+==XCUIElementTypeImage_315;XPATH;//XCUIElementTypeButton[@name="T"]/XCUIElementTypeImage;;[];[XCUIElementTypeImage_315];[Unknown];;==
+==Daily_Saving;XPATH;//XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeStaticText[3];;[];[Daily_Saving];[Unknown];;==
+==Setup_Daily_Savings;XPATH;//XCUIElementTypeButton[@name="Setup Daily Savings"];;[];[Setup_Daily_Savings];[Unknown];;==
+==Proceed;XPATH;//XCUIElementTypeButton[@name="Proceed"];;[];[Proceed];[Unknown];;==
+==Go_to_Homepage;XPATH;//XCUIElementTypeButton;;[];[Go_to_Homepage];[Unknown];;==
+
+
+^^DsSetup()
+	--Tap on-- {{XCUIElementTypeImage_315}} 
+	--Tap on-- {{Daily_Saving}} 
+	--Tap on-- {{Setup_Daily_Savings}} 
+	--Tap on-- {{Proceed}} 
+	--Tap on-- {{Go_to_Homepage}} 
+
+^^

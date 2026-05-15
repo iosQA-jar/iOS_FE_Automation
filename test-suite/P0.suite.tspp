@@ -1,0 +1,13 @@
+{
+    "testType": "mobile",
+    "groups": [],
+    "tags": [
+        []
+    ],
+    "additionalTests": [],
+    "priority": [
+        "P0"
+    ],
+    "testFolders": [],
+    "mobileOs": "ios"
+}

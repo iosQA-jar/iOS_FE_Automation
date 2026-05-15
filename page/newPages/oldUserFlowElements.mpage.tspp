@@ -1,0 +1,34 @@
+>>summary: 
+
+==eg_devmyjarapp;XPATH;//XCUIElementTypeTextField;;[];[eg_devmyjarapp];[Unknown];;==
+==Apply_Custom_URL;XPATH;//XCUIElementTypeButton[@name="Apply Custom URL"];;[];[Apply_Custom_URL];[Unknown];;==
+==English;XPATH;//XCUIElementTypeStaticText[@value="English"];;[];[English];[Unknown];;==
+==Apply_2;XPATH;//XCUIElementTypeButton[@name="Apply"];;[];[Apply];[Unknown];;==
+==Skip_for_devs;XPATH;//XCUIElementTypeButton[@name="Skip for devs"];;[];[Skip_for_devs];[Unknown];;==
+==Start_your_saving_journey;XPATH;//XCUIElementTypeStaticText[@value="Start your saving journey"];;[];[Start_your_saving_journey];[Unknown];;==
+==Use_another_number;XPATH;//XCUIElementTypeButton[@name="Use another number"];;[];[Use_another_number];[Unknown];;==
+==_00000_00000;XPATH;//XCUIElementTypeStaticText[@value="00000 00000"];;[];[_00000_00000];[Unknown];;==
+==_91;XPATH;//XCUIElementTypeStaticText[@value="+91"];;[];[_91];[Unknown];;==
+==Send_OTP;XPATH;//XCUIElementTypeStaticText[@value="Send OTP"];;[];[Send_OTP];[Unknown];;==
+==Login_with_91_6666611111;XPATH;//XCUIElementTypeButton[@name="Login with +91- 6666611111"];;[];[Login_with_91_6666611111];[Unknown];;==
+
+
+^^newUserOnboarding(newUser:text)
+	--Wait for-- [[5]] --milliseconds-- 
+	--Tap on-- {{eg_devmyjarapp}} 
+	--Type text-- [[dev.myjar.app]] 
+	--Tap on-- {{Apply_Custom_URL}} 
+	--Tap on-- {{English}} 
+	--Tap on-- {{Apply_2}} 
+	--Tap on-- {{Skip_for_devs}} 
+	--Tap on-- {{Start_your_saving_journey}} 
+	--Tap on-- {{Use_another_number}} 
+	--Tap on-- {{_00000_00000}} 
+	--Type text-- [[2222000699]] 
+	--Tap on-- {{_91}} 
+	--Tap on-- {{Send_OTP}} 
+	::apiResponse_13 = --Call API-- {{newOtpFetch > getOtp}} (([[2222000699]])) 
+	::json_14 = --Get Json body of http response-- ::apiResponse_13:: 
+	--Type text-- ::newUser:: 
+
+^^

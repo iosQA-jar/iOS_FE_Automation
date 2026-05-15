@@ -1,0 +1,16 @@
+{
+    "apps": [
+        {
+            "name": "IOS_testing",
+            "platforms": [
+                "ios"
+            ],
+            "ios": {
+                "ipaFileName": "jar-ios.ipa",
+                "appFileName": "",
+                "bundleId": "org.myjar.jar"
+            }
+        }
+    ],
+    "default": "IOS_testing"
+}

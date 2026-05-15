@@ -1,0 +1,27 @@
+>>summary: 
+
+==Daily_Saving;XPATH;//XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeStaticText[8];;[];[Daily_Saving];[Unknown];;==
+==parentElementDSlanding;XPATH;//XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView;;[];[XCUIElementTypeScrollView_803];[Unknown];;==
+==chevronup;XPATH;//XCUIElementTypeImage[@name="chevron.up"];;[];[chevronup];[Unknown];;==
+==Stop;XPATH;//XCUIElementTypeButton[@name="Stop"];;[];[Stop];[Unknown];;==
+==Stop_Saving;XPATH;//XCUIElementTypeStaticText[@value="Stop Saving"];;[];[Stop_Saving];[Unknown];;==
+==Concerned_about_money_safety_;XPATH;//XCUIElementTypeStaticText[@value="Concerned about money safety "];;[];[Concerned_about_money_safety_];[Unknown];;==
+==Submit;XPATH;//XCUIElementTypeButton[@name="Submit"];;[];[Submit];[Unknown];;==
+==Permanently;XPATH;//XCUIElementTypeStaticText[@value="Permanently"];;[];[Permanently];[Unknown];;==
+==Go_To_Home;XPATH;//XCUIElementTypeStaticText[@value="Go To Home"];;[];[Go_To_Home];[Unknown];;==
+
+
+^^cancelDS()
+	--Tap on-- {{Daily_Saving}} 
+	--Scroll-- {{parentElementDSlanding}} --until-- {{chevronup}} --is in view-- 
+	--Tap on-- {{chevronup}} 
+	--Tap on-- {{Stop}} 
+	--Tap on-- {{Stop_Saving}} 
+	--Tap on-- {{Concerned_about_money_safety_}} 
+	--Tap on-- {{Submit}} 
+	--Tap on-- {{Stop_Saving}} 
+	--Tap on-- {{Permanently}} 
+	--Tap on-- {{Stop_Saving}} 
+	--Tap on-- {{Go_To_Home}} 
+
+^^
