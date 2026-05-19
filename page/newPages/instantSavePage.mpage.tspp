@@ -1,0 +1,15 @@
+>>summary: 
+
+==XCUIElementTypeCollectionView_;XPATH;//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView;;[];[XCUIElementTypeCollectionView_];[Unknown];;==
+==Save_Instantly;XPATH;//XCUIElementTypeStaticText[@value="Save Instantly"];;[];[Save_Instantly];[Unknown];;==
+==Save_in_Gold;XPATH;//XCUIElementTypeStaticText[@value="Save in Gold"];;[];[Save_in_Gold];[Unknown];;==
+==_544;XPATH;//XCUIElementTypeTextField[@value="544"];;[];[_544];[Unknown];;==
+==XCUIElementTypeTextField_502;XPATH;//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeTextField[1];;[];[XCUIElementTypeTextField_502];[Unknown];;==
+==XCUIElementTypeTextField_689;XPATH;//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeTextField[1];;[];[XCUIElementTypeTextField_689];[Unknown];;==
+==Pay_Now;XPATH;//XCUIElementTypeButton[@name="Pay Now"];;[];[Pay_Now];[Unknown];;==
+==PhonePe;XPATH;//XCUIElementTypeStaticText[@value="PhonePe"];;[];[PhonePe];[Unknown];;==
+==Download_Invoice;XPATH;//XCUIElementTypeStaticText[@value="Download Invoice"];;[];[Download_Invoice];[Unknown];;==
+==Download_2;XPATH;//XCUIElementTypeButton;;[];[Download];[Unknown];;==
+==arrowleft;XPATH;//XCUIElementTypeImage;;[];[arrowleft];[Unknown];;==
+==Go_To_Homepage;XPATH;//XCUIElementTypeButton;;[];[Go_To_Homepage];[Unknown];;==
+
