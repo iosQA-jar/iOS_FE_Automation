@@ -11,24 +11,36 @@
 ==_91;XPATH;//XCUIElementTypeStaticText[@value="+91"];;[];[_91];[Unknown];;==
 ==Send_OTP;XPATH;//XCUIElementTypeStaticText[@value="Send OTP"];;[];[Send_OTP];[Unknown];;==
 ==Login_with_91_6666611111;XPATH;//XCUIElementTypeButton[@name="Login with +91- 6666611111"];;[];[Login_with_91_6666611111];[Unknown];;==
+==Skip_2;XPATH;//XCUIElementTypeButton;;[];[Skip];[Unknown];;==
+==Skip_1;XPATH;//XCUIElementTypeButton[@name="Skip"];;[];[Skip];[Unknown];;==
+==Cancel;XPATH;//XCUIElementTypeButton[@name="Cancel"];;[];[Cancel];[Unknown];;==
+==otpArea;XPATH;//XCUIElementTypeTextField;;[];[];[];;==
 
 
-^^newUserOnboarding(newUser:text)
-	--Wait for-- [[5]] --milliseconds-- 
+^^newUserOnboarding(number:text)
+	--Wait for-- {{eg_devmyjarapp}} --to be present-- 
+	--Wait for-- [[5000]] --milliseconds-- 
 	--Tap on-- {{eg_devmyjarapp}} 
 	--Type text-- [[dev.myjar.app]] 
 	--Tap on-- {{Apply_Custom_URL}} 
 	--Tap on-- {{English}} 
 	--Tap on-- {{Apply_2}} 
+	--Wait for-- [[2000]] --milliseconds-- 
 	--Tap on-- {{Skip_for_devs}} 
 	--Tap on-- {{Start_your_saving_journey}} 
 	--Tap on-- {{Use_another_number}} 
 	--Tap on-- {{_00000_00000}} 
-	--Type text-- [[2222000699]] 
+	--Type text-- ::number:: 
 	--Tap on-- {{_91}} 
 	--Tap on-- {{Send_OTP}} 
-	::apiResponse_13 = --Call API-- {{newOtpFetch > getOtp}} (([[2222000699]])) 
+	--Wait for-- [[2000]] --milliseconds-- 
+	::apiResponse_13 = --Call API-- {{newOtpFetch > getOtp}} ((::number::)) 
 	::json_14 = --Get Json body of http response-- ::apiResponse_13:: 
-	--Type text-- ::newUser:: 
+	--Print log-- ::json_14.data:: 
+	--Send keys-- ::json_14.data:: --to-- {{otpArea}} 
+	--Wait for-- [[5000]] --milliseconds-- 
+	--Tap on-- {{Skip_1}} 
+	--Tap on-- {{Skip_2}} 
+	--Tap on-- {{Cancel}} 
 
 ^^

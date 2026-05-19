@@ -1,0 +1,30 @@
+>>testDataType: undefined
+>>summary: 
+>>tags: 
+>>feature: 
+>>ticketUrl: 
+>>testCaseId: 
+>>importSource: 
+>>priority: 
+>>aiRequestId: 
+>>mobileApp: IOS_testing
+>>mobileOs: ios
+
+
+__newPages > oldUserFlowElements > newUserOnboarding__ [[2222000669]] 
+--Scroll-- {{newPages > instantSavePage > XCUIElementTypeCollectionView_}} --until-- {{newPages > instantSavePage > Save_Instantly}} --is in view-- 
+--Tap on-- {{newPages > instantSavePage > Save_Instantly}} 
+--Wait for-- {{newPages > instantSavePage > Save_in_Gold}} --to be present-- 
+--Tap on-- {{newPages > instantSavePage > Save_in_Gold}} 
+--Tap on-- {{newPages > instantSavePage > XCUIElementTypeTextField_502}} 
+--Clear text from-- {{newPages > instantSavePage > XCUIElementTypeTextField_502}} 
+--Tap on-- {{newPages > instantSavePage > XCUIElementTypeTextField_502}} 
+--Input value-- [[100]] --in-- {{newPages > instantSavePage > XCUIElementTypeTextField_689}} 
+--Tap on-- {{newPages > instantSavePage > Pay_Now}} 
+--Tap on-- {{newPages > instantSavePage > PhonePe}} 
+--Tap on-- {{newPages > DsSetupPage > Proceed}} 
+--Tap on-- {{newPages > instantSavePage > Download_Invoice}} 
+--Tap on-- {{newPages > instantSavePage > Download_2}} 
+--Tap on-- {{newPages > instantSavePage > arrowleft}} 
+--Tap on-- {{newPages > instantSavePage > Go_To_Homepage}} 
+
