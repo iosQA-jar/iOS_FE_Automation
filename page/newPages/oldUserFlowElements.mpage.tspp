@@ -26,6 +26,7 @@
 	--Tap on-- {{English}} 
 	--Tap on-- {{Apply_2}} 
 	--Wait for-- [[2000]] --milliseconds-- 
+	--Wait for-- {{Skip_for_devs}} --to be present-- 
 	--Tap on-- {{Skip_for_devs}} 
 	--Tap on-- {{Start_your_saving_journey}} 
 	--Tap on-- {{Use_another_number}} 
@@ -40,7 +41,7 @@
 	--Send keys-- ::json_14.data:: --to-- {{otpArea}} 
 	--Wait for-- [[5000]] --milliseconds-- 
 	--Tap on-- {{Skip_1}} 
-	--Tap on-- {{Skip_2}} 
+	--Tap on-- {{Skip_1}} 
 	--Tap on-- {{Cancel}} 
 
 ^^

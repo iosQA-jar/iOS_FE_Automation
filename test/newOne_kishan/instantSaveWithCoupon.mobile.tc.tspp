@@ -11,6 +11,5 @@
 >>mobileOs: ios
 
 
-__newPages > oldUserFlowElements > newUserOnboarding__ [[2222000669]] 
-__newPages > instantSavePage > instantSaveEduElement__ 
+__newPages > instantSaveWithCoupon > instantSavePagewithCouponSelection__ 
 
