@@ -1,0 +1,40 @@
+>>summary: 
+
+==_Save_Instantly;XPATH;//XCUIElementTypeStaticText[@value="⚡ Save Instantly"];;[];[_Save_Instantly];[Unknown];;==
+==XCUIElementTypeTextField_375;XPATH;//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeTextField[1];;[];[XCUIElementTypeTextField_375];[Unknown];;==
+==XCUIElementTypeTextField_273;XPATH;//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeTextField[1];;[];[XCUIElementTypeTextField_273];[Unknown];;==
+==XCUIElementTypeScrollView_141;XPATH;//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView;;[];[XCUIElementTypeScrollView_141];[Unknown];;==
+==APPLY;XPATH;//XCUIElementTypeButton[@name="APPLY"];;[];[APPLY];[Unknown];;==
+==YAY;XPATH;//XCUIElementTypeButton[@name="YAY!"];;[];[YAY];[Unknown];;==
+==Order_successful;XPATH;//XCUIElementTypeStaticText[@value="Order successful"];;[];[Order_successful];[Unknown];;==
+==_11000__00920_g;XPATH;//XCUIElementTypeStaticText[@value="₹1100.0 | 0.0920 g"];;[];[_11000__00920_g];[Unknown];;==
+==chevrondown;XPATH;//XCUIElementTypeButton[@name="chevron.down"];;[];[chevrondown];[Unknown];;==
+==xmark;XPATH;//XCUIElementTypeButton[@name="xmark"];;[];[xmark];[Unknown];;==
+==Breakdown;XPATH;//XCUIElementTypeStaticText[@value="Breakdown"];;[];[Breakdown];[Unknown];;==
+==scrollViewHomeScreen;XPATH;//XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther;;[];[];[];;==
+
+
+^^instantSavePagewithCouponSelection()
+	--Scroll horizontally-- {{scrollViewHomeScreen}} --until-- {{_Save_Instantly}} --is in view-- 
+	--Tap on-- {{_Save_Instantly}} 
+	--Tap on-- {{XCUIElementTypeTextField_375}} 
+	--Clear text from-- {{XCUIElementTypeTextField_375}} 
+	--Tap on-- {{XCUIElementTypeTextField_375}} 
+	--Input value-- [[1000]] --in-- {{XCUIElementTypeTextField_273}} 
+	--Scroll horizontally-- {{XCUIElementTypeScrollView_141}} --until-- {{APPLY}} --is in view-- 
+	--Tap on-- {{chevrondown}} 
+	--Verify if text of-- {{Breakdown}} --is equal to-- [[Breakdown]] 
+	--Print log-- [[BreakDown BS is displaying]] 
+	--Tap on-- {{xmark}} 
+	--Verify if text of-- {{APPLY}} --is equal to-- [[APPLY]] 
+	--Tap on-- {{APPLY}} 
+	--Wait for-- {{YAY}} --to be present-- 
+	--Tap on-- {{YAY}} 
+	__newPages > instantSavePage > payNowToProceed__ 
+	__newPages > DsSetupPage > ProceedCTAwithWait__ 
+	--Wait for-- {{Order_successful}} --to be present-- 
+	--Verify if-- {{Order_successful}} --is present-- 
+	--Verify if text of-- {{_11000__00920_g}} --is equal to-- [[₹1100.0 | 0.0920 g]] 
+	__newPages > instantSavePage > GoToHomePageCTA__ 
+
+^^

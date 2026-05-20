@@ -15,3 +15,14 @@
 	--Tap on-- {{Go_to_Homepage}} 
 
 ^^
+
+^^proceedCTA()
+	--Tap on-- {{Proceed}} 
+
+^^
+
+^^ProceedCTAwithWait()
+	--Wait for-- {{Proceed}} --to be present-- 
+	__newPages > DsSetupPage > proceedCTA__ 
+
+^^
