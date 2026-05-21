@@ -1,11 +1,11 @@
 >>testDataType: undefined
->>summary: 
+>>summary: Daily setup cancel after daily setup
 >>tags: 
 >>feature: 
 >>ticketUrl: 
 >>testCaseId: 
 >>importSource: 
->>priority: 
+>>priority: 0
 >>aiRequestId: 
 >>mobileApp: IOS_testing
 >>mobileOs: ios

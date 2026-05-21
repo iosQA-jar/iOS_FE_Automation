@@ -1,11 +1,11 @@
 >>testDataType: undefined
->>summary: 
+>>summary: Daily saving setup after new user login from profile screen 
 >>tags: 
 >>feature: 
 >>ticketUrl: 
 >>testCaseId: 
 >>importSource: 
->>priority: 
+>>priority: 0
 >>aiRequestId: 
 >>mobileApp: IOS_testing
 >>mobileOs: ios

@@ -1,11 +1,11 @@
 >>testDataType: undefined
->>summary: 
+>>summary: Instant save buy gold with coupon flow added validation for success and handling
 >>tags: 
 >>feature: 
 >>ticketUrl: 
 >>testCaseId: 
 >>importSource: 
->>priority: 
+>>priority: 0
 >>aiRequestId: 
 >>mobileApp: IOS_testing
 >>mobileOs: ios

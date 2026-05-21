@@ -9,5 +9,6 @@
         "P0"
     ],
     "testFolders": [],
-    "mobileOs": "ios"
+    "mobileOs": "ios",
+    "hooks": "all"
 }

@@ -17,7 +17,8 @@
 ^^instantSaveEduElement()
 	--Wait for-- {{XCUIElementTypeCollectionView_}} --to be present-- 
 	--Scroll-- {{XCUIElementTypeCollectionView_}} --until-- {{Save_Instantly}} --is in view-- 
-	--Wait for-- [[5000]] --milliseconds-- 
+	--Wait for-- {{Save_Instantly}} --to be visible-- 
+	--Verify if-- {{Save_Instantly}} --is visible-- 
 	--Tap on-- {{Save_Instantly}} 
 	--Wait for-- {{Save_in_Gold}} --to be present-- 
 	--Tap on-- {{Save_in_Gold}} 
