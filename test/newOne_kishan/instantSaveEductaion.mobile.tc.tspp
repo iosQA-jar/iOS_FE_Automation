@@ -1,16 +1,16 @@
 >>testDataType: undefined
->>summary: 
+>>summary: Instant save education for new user 
 >>tags: 
 >>feature: 
 >>ticketUrl: 
 >>testCaseId: 
 >>importSource: 
->>priority: 
+>>priority: 0
 >>aiRequestId: 
 >>mobileApp: IOS_testing
 >>mobileOs: ios
 
 
-__newPages > oldUserFlowElements > newUserOnboarding__ [[2222000669]] 
+#__newPages > oldUserFlowElements > newUserOnboarding__ [[2222000669]]
 __newPages > instantSavePage > instantSaveEduElement__ 
 
